@@ -1,0 +1,28 @@
+<div id="main">
+
+<h1>Tabela de Teste</h1>
+
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+    <thead>
+        <tr>
+          <th>id</th>
+          <th>Nome</th>
+          <th>Dependência</th>
+          <th>Município</th>
+          <th>UF</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr *ngFor="let pessoa of tabela">
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.dependencia }}</td>
+            <td>{{ pessoa.municipio }}</td>
+            <td>{{ pessoa.uf }}</td>
+        </tr>
+    </tbody>
+
+</div>
+</div>
+
